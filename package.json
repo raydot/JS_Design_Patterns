@@ -1,0 +1,26 @@
+{
+  "name": "js_design_patterns",
+  "version": "1.0.0",
+  "description": "Patterns from Stoyan Stefanov\\'s book",
+  "main": "01-Constructor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raydot/JS_Design_Patterns.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "javascript",
+    "design",
+    "patterns"
+  ],
+  "author": "Dave Kanter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raydot/JS_Design_Patterns/issues"
+  },
+  "homepage": "https://github.com/raydot/JS_Design_Patterns#readme"
+}
