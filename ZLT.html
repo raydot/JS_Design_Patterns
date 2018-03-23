@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	article {
+		background-color: #000;
+		color: white;
+	}
+
+	article:first-child {
+		height:200px;
+	}
+
+	#wrapper {
+  		background-color:#eee;
+  		width: 400px;
+	}
+
+	button {
+  		background:blue;
+    	color:white; 
+	}
+</style>
+</head>
+<body>
+
+<section id="wrapper">
+    <article>one</article>
+
+    <article>two</article>
+
+    <article>three</article>
+
+    <button>save</button>
+</section>
+	
+	<!-- <script>
+		var myNum = Math.random() 
+		* 300 + 10;
+	</script> -->
+	<script>
+	
+	
+var selected = ["Carrollton, TX", "Allen, TX"];
+var response = {
+  "status": "success",
+  "data": {
+    "citiesCount": 20,
+    "cityIds": [
+      {
+        "cityId": "574",
+        "cityAndState": "Allen, TX"
+      },
+      {
+        "cityId": "722",
+        "cityAndState": "Arlington, TX"
+      },
+      {
+        "cityId": "1736",
+        "cityAndState": "Carrollton, TX"
+      },
+      {
+        "cityId": "1737",
+        "cityAndState": "Dallas, TX"
+      },
+      {
+        "cityId": "1739",
+        "cityAndState": "Baltimore, MD"
+      },
+      {
+        "cityId": "1740",
+        "cityAndState": "Ann Arbor, MI"
+      },
+      {
+        "cityId": "1741",
+        "cityAndState": "Detroit, MI"
+      },
+      {
+        "cityId": "1742",
+        "cityAndState": "Royal Oak, MI"
+      },
+      {
+        "cityId": "1743",
+        "cityAndState": "Maddison Heights, MI"
+      }
+    ]
+  }
+}
+const responseData = response.data.cityIds;
+
+
+//selected, response
+function parseIt() {
+	let i, j;
+	for (i = 0; i < selected.length; i++) {
+		for (j = 0; j < responseData.length; j++) {
+			if (selected[i] == responseData[j].cityAndState)
+				console.log(selected[i] + " cityId = " + responseData[j].cityId);
+		}
+	}
+}
+
+</script>
+
+</body>
+</html>
