@@ -1,5 +1,6 @@
 /* the * denotes a generator function */
 
+
 function* countSomeSales() {
 	var saleList = [3, 7, 5];
 	for(var i = 0; i < saleList.length; i++) {
@@ -14,7 +15,7 @@ console.log(someStore.next());
 console.log(someStore.next());
 console.log(someStore.next());
 console.log(someStore.next());
-
+//need to climb back xoxo
 
 
 

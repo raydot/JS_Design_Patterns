@@ -1,4 +1,4 @@
-MYAPP.namespace('MYAPP.utilities.array'); //this doesn't work!
+MYAPP.namespace('MYAPP.utilities.array');
 
 MYAPP.utilities.array = (function () {
 		//dependencies
